@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>course details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>courses</h2>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">Front end courses</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Back end courses</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Full stack developer</button>
+</div>
+
+<div id="London" class="w3-container city">
+  <h2><b>Front end courses</b></h2>
+  <p><b>HTML + CSS + JAVA SCRIPT</b></p>
+  <p>HTML:<br>
+          ->HTML stands for Hyper Text Markup Language.<br>
+		  ->HTML is the standard markup language for creating Web pages. <br>
+		  ->HTML describes the structure of a Web page. <br>
+		  ->HTML consists of a series of elements.<br>
+		  ->HTML elements tell the browser how to display the content.</p>
+    <p>CSS:<br>
+	      -> Stands for "Cascading Style Sheet."  <br>
+		   ->Cascading style sheets are used to format the layout of Web pages. <br>
+		   ->They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.
+<p>
+	<p>JAVA SCRIPT:<br>
+	       ->JavaScript is a dynamic computer programming language.<br>
+           ->It is lightweight and most commonly used as a part of web pages<br>
+           ->whose implementations allow client-side script to interact with the user and make dynamic pages.<br>
+           ->It is an interpreted programming language with object-oriented capabilities.</p>
+		  
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2><b>Back end courses</b></h2>
+  <p><b>SERVER SIDE LANGUAGE + SERVER + DATABASE</b></p> 
+  <p>Server side language:(PHP, Python, Ruby, C#, and NodeJS(JavaScript))<br>
+              ->Client-side means that the action takes place on the user's (the client's) computer.<br> 
+			  ->Server-side means that the action takes place on a web server.<br>
+			  ->In order for a programming language to do its job, the computer has to understand the language its speaking.</p><br>
+   <p>server:<br>
+          ->In computing, a server is a piece of computer hardware. <br>
+		  ->Typical servers are database servers, file servers, mail servers, print servers, web servers, game servers, and application servers.
+        </p><br>
+	<p>database:<br>
+	      ->A database is an organized collection of structured information, or data, typically stored electronically in a computer system. 
+		  ->A database is usually controlled by a database management system (DBMS).
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <h2><b>Full stack developer</b></h2>
+  <p><b>HTML + CSS + JAVASCRIPT + SERVER SIDE LANGUAGE + SERVER + DATABASE</b></p>
+  <p> Full stack developer:<br>
+   <p>->A full stack web developer is a person who can develop both client and server software.<br>
+       ->In addition to mastering HTML and CSS, he/she also knows how to:<br>
+       ->Program a browser (like using JavaScript, jQuery, Angular, or Vue)<br>
+       ->Program a server (like using PHP, ASP, Python, or Node)<br>
+       ->Program a database (like using SQL, SQLite, or MongoDB)</p>
+  <p>Popular stacks:<br>
+              -> LAMP stack: JavaScript - Linux - Apache - MySQL - PHP<br>
+              ->LEMP stack: JavaScript - Linux - Nginx - MySQL - PHP<br>
+              ->MEAN stack: JavaScript - MongoDB - Express - AngularJS - Node.js<br>
+              ->Django stack: JavaScript - Python - Django - MySQL<br>
+              ->Ruby on Rails: JavaScript - Ruby - SQLite - Rails</p>
+</div>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
